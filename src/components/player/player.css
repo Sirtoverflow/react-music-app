@@ -1,0 +1,159 @@
+:root{
+  --progress-bar:100%;
+  --progress-bar-transform: 0%;
+}
+.Playerwrapp {
+  position: relative;
+
+}
+
+.player-body {
+  font-family: Helvetica;
+  background: rgba(18, 18, 18, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(145, 145, 145, 0.12);
+}
+
+.flex-container {
+  margin-left: 55px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px 10px 30px 10px;
+
+}
+
+.left-container {
+  margin-left: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.left-container>p {
+  margin: 0;
+}
+
+.left-imgs>img {
+  height: 65px;
+  border-radius: 5px;
+}
+
+.left-name,.left-artist {
+  font-size: 24px;
+  width: 300px;
+}
+
+.left-artist {
+  font-size: 14px;  
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 8;
+  margin: 0px 200px;
+}
+.playBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: white;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.playBtn>img{
+  position: absolute;
+}
+.subbtn {
+  height: 18px;
+  padding: 5px 5px;
+}
+
+.list-inline>li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.list-inline>li>img {
+  margin-bottom: 5px;
+}
+
+.loadingSong {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.timelineSong{
+  display: flex;
+  position: relative;;
+  width: 500px;
+  height: 5px;
+}
+.theSongtime,.volume{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: var(--font2-color);
+  width: 500px;
+  height: 5px;
+  overflow: hidden;
+
+}
+.progressbar,.volume-bar{
+  background-color: white;
+  width: var(--progress-bar);
+  height: 100%;
+}
+.progressbar{
+  transform: translateX(calc(-100% + var(--progress-bar-transform)));
+}
+.progressbar-handle,.volumebar-handle{
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+  margin: 1px var(--progress-bar-transform);
+}
+
+
+.loadingSong>span {
+  font-size: 15px;
+}
+.loadingSong:hover .progressbar{
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.loadingSong:hover .progressbar-handle{
+  display: block;
+}
+
+.right-container {
+  display: flex;
+  padding-right: 50px;
+}
+
+.right-container>img {
+  width: 16px;
+  height: 16px;
+}
+
+.volume {
+  position: relative;
+  width: 100px;
+  overflow: hidden;
+  transform: 10%;
+}
+.volume-bar:hover{
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+.volume-bar:hover .volume-bar-handle{
+  display: block;
+}

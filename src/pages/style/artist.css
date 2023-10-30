@@ -1,0 +1,113 @@
+body{
+    overflow: hidden;
+}
+.artistBg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 10px;
+    margin-bottom: 10px;
+    background-color: var(--bg-color);
+    z-index: -1;
+    filter: blur(4px) grayscale(40%) opacity(0.8) saturate(2);
+  }
+.artistBg img {
+    position: absolute;
+    width: 850px;
+    height: auto;
+    /* border-radius: 20px; */
+    transform: scaleX(-1);
+}
+
+.artist-wrap {
+    display: flex;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.artist-container-left {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 0px 10px;
+    margin-right: 20px;
+}
+
+.artistImg {
+    margin: 0px 0px 0px 0px;
+}
+
+.streamingMonth {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.artistName {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+.followBtn {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.artist-container-right {
+    margin-left: 200px;
+    padding-right: 10px;
+    width: 1000px;
+    height: 630px;
+    overflow: scroll;
+}
+
+.artist-album-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.right-artist-title {
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.newest-artist-album {
+    display: flex;
+    margin-top: 20px;
+}
+
+.newest-artist-album>img {
+    width: 150px;
+    border-radius: 15px;
+}
+
+.newest-artist-album>div {
+    margin: 40px 15px;
+}
+
+.newestAlbum {
+    font-weight: bolder;
+}
+
+
+/* popular */
+.popular-lists-wrap {
+    margin: 20px 0px;
+}
+
+.popular-lists-wrap>h2 {
+    margin-left: 20px;
+}
+
+.popular-lists {
+    margin-top: 20px;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

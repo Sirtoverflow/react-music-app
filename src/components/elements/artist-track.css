@@ -1,0 +1,73 @@
+
+.popular-song {
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.popular-song:hover {
+    background-color: var(--secondary-color);
+}
+.nameSong,
+.listeningSong,
+.timeSong,
+.favoriteSong {
+    display:block;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.nameSong {
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    width: 150px;
+}
+.nameSong span{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.listeningSong {
+    width: 100px;
+    text-align: end;
+}
+.popular-song .numbSong{
+    display: none;
+}
+.popular-song .singerSong{
+    display: none;
+}
+.favoriteSong {
+    height: 18px;
+    width: 18px;
+    padding-right: 30px;
+}
+.active {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    background-color: none;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+}
+.active>.nameSong{
+    color: var(--main-color);
+}
+#active-wave{
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    padding: 3px 5px;
+}
+.active #active-wave{
+    display: block;
+}
+.sub-text{
+    color: var(--font2-color);
+}

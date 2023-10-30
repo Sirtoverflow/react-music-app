@@ -1,0 +1,22 @@
+.home-container{
+    margin-top: 40px;
+    height: 650px;
+    overflow: scroll;
+
+}
+.home-container>h2{
+    font-weight: 650;
+    margin-top: 10px;
+    text-align: left;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.addspace{
+    margin-top: 10px;
+}
+
+
+

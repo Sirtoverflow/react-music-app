@@ -1,0 +1,24 @@
+.leftbar-container{
+    margin-top: 25px;
+    padding: 10px 50px;
+}
+.leftbar-container> ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.leftbar-container li{
+    display: inline-block;
+    margin:0px 0px 30px 0px;
+}
+.brand-logo{
+    width: 60px;
+    margin-bottom: 050px;
+}
+.avtUser {
+    height: 50px;
+}
+#home,#find,#library{
+    height: 24px;
+    width: 24px;
+}

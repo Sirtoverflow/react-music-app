@@ -1,0 +1,48 @@
+.section-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height:80px;
+    width: 400px;
+    border-radius: 10px;
+    background-color:#151515;
+    transition: 0.4s;
+}
+.section-container:hover{
+    background-color:#282828;
+
+}
+.section-container>.suggest>img{
+    height: 80px;
+    width: 80px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 10px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.section-container{
+    margin: 10px 15px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.suggest{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.suggest>span{
+    font-weight: 900px;
+    font-size: 19px;
+    padding: 10px;
+}
+.suggest>.ButtonInner{
+    bottom:-5px;
+    height: 30px;
+    width: 30px;
+}
+.suggest:hover>.ButtonInner{
+    opacity: 1;
+    transform: translateY(-20px);
+    transition: 0.3s;
+}

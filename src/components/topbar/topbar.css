@@ -1,0 +1,70 @@
+.angleTop{
+    display: flex;
+    font-size: 30px;
+    color: var(--font2-color);
+    margin-top: 70px;
+    margin-right: 50px;
+}
+.angleTop >svg{
+    margin:0px 5px 0px 5px;
+}
+.TopBar{
+    display: flex;
+}
+.TopBar-wrap{
+    display: flex;
+    width:1500px;
+    overflow: scroll;
+}
+.topbar-container{
+    display: flex;
+    margin-top: 30px;
+    padding: 20px 10px;
+    font-size: 16px;
+}
+.topbar-box{
+    margin-right: 15px;
+    border-radius: 16px;
+    width: 330px;
+    height: 70px;
+    border-radius: 15px;
+    text-align: left;
+    background: rgba(43, 43, 43, 0.5);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(145, 145, 145, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+
+}
+.topbar-box:hover{
+    background: rgb(118, 255, 108,0.15);
+}
+.topbar-box-container{
+    padding: 20px;
+}
+.topbar-box-container >p{
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.is-active{
+    display: flex;
+    position: relative;
+    color: var(--main-color);
+}
+.box-active{
+    border-radius: 10px;
+    margin-top: 18px;
+    background-color: var(--main-color);
+    height: 5px;
+    width: 255px;
+    z-index: 0;
+}
+.box-waving{
+    height: 18px;
+    width: 18px;
+   position: absolute;
+   right: 0;
+   margin: -22px 10px;
+}
+
